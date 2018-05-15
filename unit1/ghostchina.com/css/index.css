@@ -1,0 +1,141 @@
+/*标签选择器，选中所有标签*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/*类选择器*/
+.container {
+    width: 100%;
+    /*height: 400px;*/
+    background: #EBEBEB;
+    /*background: blue;*/
+}
+
+/*选中header里面的所有div*/
+/*空格表示内部所有的子元素*/
+/*header begin*/
+.header {
+
+}
+
+.header .logo {
+    width: 100%;
+    height: 250px;
+    background-image: url("../images/logo.jpg");
+    /*background-position: center;*/
+    background-position: 0 -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .nav {
+    width: 100%;
+    height: 55px;
+    background: white;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header .nav ul li {
+    width: 100px;
+    height: 55px;
+    /*background-color: yellow;*/
+    margin-right: 10px;
+    /*文本居中*/
+    text-align: center;
+    /*文本垂直举重*/
+    line-height: 55px;
+    color: rgba(47, 47, 47, 0.71);
+}
+
+.header .nav ul li:first-child {
+    border-bottom: solid 2px #ff8109;
+}
+
+.header .nav ul li a {
+    /*去掉超链接下划线*/
+    text-decoration: none;
+    color: rgba(47, 47, 47, 0.71);
+
+}
+
+.header .nav ul li:hover a {
+    color: orange;
+}
+
+/*header end*/
+/*选中.header的直接子元素*/
+/*.header>div{
+
+}*/
+/*
+    pc:    970<普通屏<1170<高清屏
+    pad:   750-970
+    phone: <750
+
+
+*/
+/*main start*/
+.main {
+    width: 1002px;
+    height: 400px;
+    background: black;
+    /*居中*/
+    margin: auto;
+    /*这些代码一定要写在父容器中，他是控制内部子元素的*/
+    /*设置div排列方式*/
+    display: flex;
+    /*排列方向*/
+    flex-direction: row;
+    /*对齐方式：center,flex-start,flex-end*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.main .main-left {
+    width: 600px;
+    height: 350px;
+    background: yellow;
+}
+
+.main .main-right {
+    width: 350px;
+    height: 350px;
+    background: red;
+}
+
+/*main end*/
+/*footer begin*/
+.footer {
+    width: 100%;
+    height: 200px;
+    background: green;
+}
+
+/*footer end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
